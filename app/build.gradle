@@ -63,8 +63,10 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:' + rootProject.supportLibVersion
     implementation 'com.android.support.constraint:constraint-layout:' + rootProject.constraintLayoutVersion
 
-    // Navigation
+    implementation 'android.arch.work:work-runtime:1.0.0-alpha01'
+    implementation 'android.arch.work:work-runtime-ktx:1.0.0-alpha01'
 
+    // Navigation
     implementation 'android.arch.navigation:navigation-fragment:' + rootProject.navigationVersion
     implementation 'android.arch.navigation:navigation-ui:' + rootProject.navigationVersion
     implementation 'com.android.support:support-v4:27.1.1'

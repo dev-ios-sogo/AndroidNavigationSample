@@ -31,8 +31,11 @@
 
         <action
             android:id="@+id/next_action"
-            app:destination="@+id/flow_step_two">
-        </action>
+            app:destination="@+id/flow_step_two"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 
     <fragment
@@ -44,11 +47,14 @@
             android:name="step"
             type="integer"
             android:defaultValue="2"/>
-
         <action
             android:id="@+id/next_action"
-            app:popUpTo="@id/launcher_home">
-        </action>
+            app:destination="@id/flowStepThree"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
@@ -74,14 +80,31 @@
 
         <!-- TODO END STEP 12 -->
     </fragment>
+
     <fragment
         android:id="@+id/settings_fragment"
         android:name="com.example.android.codelabs.navigation.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+
     <fragment
         android:id="@+id/shopping_cart"
         android:name="com.example.android.codelabs.navigation.ShoppingCart"
         android:label="fragment_shopping_cart"
         tools:layout="@layout/fragment_shopping_cart" />
+    <fragment
+        android:id="@+id/flowStepThree"
+        android:name="com.example.android.codelabs.navigation.FlowStepFragment"
+        android:label="fragment_flow_step_three"
+        tools:layout="@layout/fragment_flow_step_three" >
+
+        <argument
+            android:name="step"
+            type="integer"
+            android:defaultValue="3"/>
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/launcher_home" />
+    </fragment>
 </navigation>

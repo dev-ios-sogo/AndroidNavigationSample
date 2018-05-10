@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
         setupNavigationMenu(navController)
 
-        setupBottomNavMenu(navController)
+        //setupBottomNavMenu(navController)
 
         navController.addOnNavigatedListener { _, destination ->
             val dest: String = try {

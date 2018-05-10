@@ -13,8 +13,20 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-15" />
-                            <option name="y" value="427" />
+                            <option name="x" value="-72" />
+                            <option name="y" value="484" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="flowStepThree">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="519" />
+                            <option name="y" value="495" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -67,8 +79,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="196" />
-                            <option name="y" value="-94" />
+                            <option name="x" value="148" />
+                            <option name="y" value="-132" />
                           </Point>
                         </option>
                         <option name="myPositions">
