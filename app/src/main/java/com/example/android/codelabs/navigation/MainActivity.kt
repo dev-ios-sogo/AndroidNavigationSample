@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         // Set up Action Bar
         val navController = host.navController
+
         setupActionBar(navController)
 
         setupNavigationMenu(navController)
